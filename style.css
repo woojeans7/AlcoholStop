@@ -12,6 +12,11 @@
 }
 
 /* 메인 > 왼쪽 > 아래 영역 시작 */
+
+.main_leftBottomLink {
+  text-decoration: none;
+}
+
 /* div 박스 설정 */
 .main_leftBottomBox {
   position: relative;
@@ -25,7 +30,7 @@
 }
 
 /* div 박스 hover 설정 */
-.main_leftBottomBox:hover + .fa-arrow-right::after {
+.main_leftBottomLink:hover .fa-arrow-right {
   transform: translateX(10px);
 }
 
