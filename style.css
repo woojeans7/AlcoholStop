@@ -25,14 +25,8 @@
 }
 
 /* div 박스 hover 설정 */
-
-.main_leftBottomBox:hover::after {
-
-}
-
-.main_leftBottomBox:hover {
-  transform-
-  transform: translateY(5px);
+.main_leftBottomBox:hover + .fa-arrow-right::after {
+  transform: translateX(10px);
 }
 
 /* div 박스 내부 설정 */
@@ -44,7 +38,7 @@
 }
 
 .main_leftBottomBox span div {
-  width: 60%;
+  width: 50%;
   line-height: 1.4rem;
 }
 
@@ -56,10 +50,12 @@
   line-height: 2.8rem;
 }
 
-
-.main_leftBottomBox span img {
+.main_leftBottomBox img {
   width: 150px;
+  position: absolute;
+  float: right;
+  right: 8%;
+  top: 12%;
 }
-
 
 /* 메인 > 왼쪽 > 아래 영역 끝 */
