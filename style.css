@@ -10,3 +10,80 @@
 #app {
   background-color: #dae9f5;
 }
+
+/* main_latestData 스타일 지정 시작 */
+
+.main_latestData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 30px;
+  width: 510px;
+  height: 420px;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.951);
+}
+
+.main_latestData > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.main_latestData > div h2 {
+  font-size: 24px;
+}
+
+.main_latestData ul {
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.main_latestData li {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+  padding: 5px;
+  width: 40%;
+}
+
+.main_latestData a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 211px;
+  height: 138.39px;
+  border: 1px solid rgba(238, 231, 231, 0.999);
+  border-radius: 25px;
+  text-decoration: none;
+  gap: 15px;
+}
+
+.main_latestData li a:hover {
+  text-decoration: underline;
+}
+
+.main_latestData a p {
+  display: flex;
+  max-width: 100%;
+  font-size: 15px;
+  color: black;
+}
+
+.main_latestData .ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 90%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+/* main_latestData 스타일 지정 끝끝 */
