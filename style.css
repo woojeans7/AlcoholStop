@@ -10,3 +10,56 @@
 #app {
   background-color: #dae9f5;
 }
+
+/* 메인 > 왼쪽 > 아래 영역 시작 */
+/* div 박스 설정 */
+.main_leftBottomBox {
+  position: relative;
+  background-color: rgb(120, 98, 191);
+  width: 510px;
+  height: 180px;
+  border-radius: 20px;
+  padding: 40px 38px 24px 38px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* div 박스 hover 설정 */
+
+.main_leftBottomBox:hover::after {
+
+}
+
+.main_leftBottomBox:hover {
+  transform-
+  transform: translateY(5px);
+}
+
+/* div 박스 내부 설정 */
+.main_leftBottomBox * {
+  font-family: nanumsquareround;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+}
+
+.main_leftBottomBox span div {
+  width: 60%;
+  line-height: 1.4rem;
+}
+
+.main_leftBottomBox span div:first-of-type {
+  font-weight: bold;
+}
+
+.main_leftBottomBox span i {
+  line-height: 2.8rem;
+}
+
+
+.main_leftBottomBox span img {
+  width: 150px;
+}
+
+
+/* 메인 > 왼쪽 > 아래 영역 끝 */
