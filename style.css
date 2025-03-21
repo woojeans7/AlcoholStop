@@ -78,6 +78,9 @@
   background: url(./image/bg.jpg) no-repeat center bottom;
 } */
 
+.right {
+  float: right;
+}
 .rightbox {
   padding: 35px;
   width: 510px;
@@ -88,7 +91,6 @@
   border: 1px solid black;
   text-align: center;
   align-items: center;
-  float: right;
   margin-bottom: 17px;
   background-color: #fff;
 }
