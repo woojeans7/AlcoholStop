@@ -18,8 +18,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid white;
-  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.951);
+  border-radius: 25px;
   width: 510px;
   height: 420px;
   gap: 20px;
@@ -59,14 +59,14 @@
   align-items: center;
   width: 211px;
   height: 138.39px;
-  border: 1px solid rgba(238, 231, 231, 0.999);
-  border-radius: 25px;
+  border: 1px solid rgb(221, 213, 213);
+  border-radius: 15px;
   text-decoration: none;
   gap: 15px;
 }
 
 .main_latestData li a:hover {
-  text-decoration: underline;
+  text-decoration: underline black;
 }
 
 .main_latestData a p {
@@ -86,4 +86,4 @@
   font-size: 17px;
 }
 
-/* main_latestData 스타일 지정 끝끝 */
+/* main_latestData 스타일 지정 끝 */
