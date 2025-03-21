@@ -115,7 +115,6 @@
 }
 .newsarea {
   height: 60px;
-
   position: relative;
   display: inline-block;
   width: 100%;
@@ -159,4 +158,53 @@ h3 > a {
   transition: all 0.3s;
   content: '';
   opacity: 0;
+}
+/* main-right 하단 */
+.icon-link {
+  width: 510px;
+  background-color: #0683b7;
+  border-radius: 20px;
+  padding: 43px 28px;
+  box-sizing: border-box;
+}
+
+.icon-link img {
+  height: 46px;
+  margin-bottom: 13px;
+}
+
+.icon-link a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.icon-link a:hover {
+  text-decoration: underline;
+}
+
+.icon-link ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.icon-link li {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-link li:last-child {
+  margin-right: 0px;
+}
+
+.icon-link span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
