@@ -13,7 +13,7 @@
 
 /* main_latestData 스타일 지정 시작 */
 
-.main_latestData {
+.left {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,24 +26,24 @@
   background-color: rgba(255, 255, 255, 0.951);
 }
 
-.main_latestData > div {
+.left > div {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
 
-.main_latestData > div h2 {
+.left > div h2 {
   font-size: 24px;
 }
 
-.main_latestData ul {
+.left ul {
   text-align: center;
   justify-content: center;
   width: 100%;
 }
 
-.main_latestData li {
+.left li {
   display: inline-block;
   text-align: center;
   justify-content: center;
@@ -52,7 +52,7 @@
   width: 40%;
 }
 
-.main_latestData a {
+.left a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,18 +65,18 @@
   gap: 15px;
 }
 
-.main_latestData li a:hover {
+.left li a:hover {
   text-decoration: underline black;
 }
 
-.main_latestData a p {
+.left a p {
   display: flex;
   max-width: 100%;
   font-size: 15px;
   color: black;
 }
 
-.main_latestData .ellipsis {
+.left .ellipsis {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
