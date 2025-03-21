@@ -1,12 +1,22 @@
 /* 절주온 스타일시트 */
 /* 초기화 */
-* {
+html {
+  margin: 0;
+  padding: 0;
+  color: #444;
+  line-height: 1.5;
+  vertical-align: baseline;
+  font-size: 10px;
+  font-family: Noto, '맑은 고딕', Malgun Gothic, '돋움', Dotum, '굴림', Gulim,
+    Arial, Verdana, AppleGothic, UnDotum, sans-serif;
+  font-weight: 200;
+  overflow-y: scroll;
+}
+body {
   margin: 0;
   padding: 0;
   font-size: 1.5rem;
-  box-sizing: border-box;
 }
-
 /* 전체 색 지정 */
 #app {
   /* width: auto; */
@@ -140,15 +150,20 @@ h3 {
   line-height: 1.1;
   text-align: center;
 }
+
 h3 > a {
-  color: #3a6dd5;
+  color: #464646;
   width: auto;
+  font-size: 1.8rem;
   font-weight: 700;
   text-decoration: none;
   display: block;
   position: relative;
   padding: 6px 0;
   cursor: pointer;
+}
+h3 > a:active {
+  color: #3a6dd5;
 }
 .newsarea .tab a::after {
   display: block;
