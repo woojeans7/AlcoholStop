@@ -87,3 +87,57 @@
 }
 
 /* main_latestData 스타일 지정 끝 */
+/* 메인 > 왼쪽 > 아래 영역 시작 */
+/* a 태그 밑줄 제거 */
+.main_leftBottomLink {
+  text-decoration: none;
+}
+
+/* div 박스 설정 */
+.main_leftBottomBox {
+  position: relative;
+  background-color: rgb(120, 98, 191);
+  width: 510px;
+  height: 180px;
+  border-radius: 20px;
+  padding: 40px 38px 24px 38px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* 전체 박스 hover 이벤트 생성 */
+.main_leftBottomLink:hover .fa-arrow-right-long {
+  transform: translateX(10px);
+}
+
+/* div 박스 내부 왼쪽 부분 설정 */
+.main_leftBottomBox span div {
+  width: 50%;
+  font-family: nanumsquareround, sans-serif;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  line-height: 1.4rem;
+}
+
+/* '절주전문인력' bold체 */
+.main_leftBottomBox span div:first-of-type {
+  font-weight: bold;
+}
+
+/* 화살표 설정 */
+.fa-arrow-right-long {
+  font-size: 20px;
+  line-height: 2.8rem;
+}
+
+/* 캐릭터 이미지 설정 */
+.main_leftBottomBox img {
+  width: 150px;
+  position: absolute;
+  float: right;
+  right: 8%;
+  top: 12%;
+}
+
+/* 메인 > 왼쪽 > 아래 영역 끝 */
