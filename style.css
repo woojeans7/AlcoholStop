@@ -1,6 +1,22 @@
 /* 절주온 스타일시트 */
 /* 초기화 */
-* {
+html {
+  margin: 0;
+  padding: 0;
+  color: #444;
+  line-height: 1.5;
+  vertical-align: baseline;
+  font-size: 10px;
+  font-family: Noto, '맑은 고딕', Malgun Gothic, '돋움', Dotum, '굴림', Gulim,
+    Arial, Verdana, AppleGothic, UnDotum, sans-serif;
+  font-weight: 200;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+body {
   margin: 0;
   padding: 0;
   font-size: 1.5rem;
@@ -21,7 +37,7 @@
 .main_leftBottomBox {
   position: relative;
   background-color: rgb(120, 98, 191);
-  width: 510px;
+  width: 35%;
   height: 180px;
   border-radius: 20px;
   padding: 40px 38px 24px 38px;
@@ -41,7 +57,7 @@
   font-size: 22px;
   color: white;
   text-decoration: none;
-  line-height: 1.4rem;
+  line-height: 3rem;
 }
 
 /* '절주전문인력' bold체 */
@@ -52,7 +68,7 @@
 /* 화살표 설정 */
 .fa-arrow-right-long {
   font-size: 20px;
-  line-height: 2.8rem;
+  line-height: 8rem;
 }
 
 /* 캐릭터 이미지 설정 */
