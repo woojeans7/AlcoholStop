@@ -3,13 +3,13 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   box-sizing: border-box;
 }
 
 /* 전체 색 지정 */
 #app {
-  width: auto;
+  /* width: auto; */
   height: 100vh;
   background-color: #dae9f5;
   text-align: center;
@@ -24,6 +24,7 @@
 /* 메인 스타일 시작 */
 #main {
   position: relative;
+  margin: 0 auto;
   width: 80%;
   height: 100vh;
 }
@@ -67,15 +68,16 @@
 }
 
 /* 배경 그림 */
-#main::before {
+/* #main::before {
   content: '';
   display: block;
   position: absolute;
   width: 100%;
   height: 100%;
-  /* right: 50px; */
+  right: 50px;
   background: url(./image/bg.jpg) no-repeat center bottom;
-}
+} */
+
 .rightbox {
   padding: 35px;
   width: 510px;
@@ -86,7 +88,7 @@
   border: 1px solid black;
   text-align: center;
   align-items: center;
-
+  float: right;
   margin-bottom: 17px;
   background-color: #fff;
 }
