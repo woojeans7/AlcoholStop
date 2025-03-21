@@ -11,6 +11,11 @@
   background-color: #dae9f5;
 }
 
+/* main_left 스타일 지정 시작 */
+
+.left * {
+  font-family: nanumsquareround, sans-serif;
+}
 /* main_latestData 스타일 지정 시작 */
 
 .leftTop {
@@ -88,6 +93,7 @@
 }
 
 /* main_latestData 스타일 지정 끝 */
+
 /* 메인 > 왼쪽 > 아래 영역 시작 */
 /* a 태그 밑줄 제거 */
 .main_leftBottomLink {
@@ -114,7 +120,6 @@
 /* div 박스 내부 왼쪽 부분 설정 */
 .main_leftBottomBox span div {
   width: 50%;
-  font-family: nanumsquareround, sans-serif;
   font-size: 22px;
   color: white;
   text-decoration: none;
