@@ -1,124 +1,130 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>절주온</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./main.js" defer></script>
-  </head>
-  <body>
-    <div id="app">
-      <!-- 헤더 영역 시작 -->
-      <header id="header">
-        <div class="headerBottom">
-          <h1>
-            <a href="#">
-              <img
-                src="./image/jeoljuon_logo.svg"
-                alt="절주온 로고"
-                width="86.5"
-                height="35"
-              />
-            </a>
-          </h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>절주온</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./main.js" defer></script>
+    </head>
+    <body>
+        <div id="app">
+            <!-- 헤더 영역 시작 -->
+            <header id="header">
+                <div class="headerBottom">
+                    <h1>
+                        <a href="#">
+                            <img
+                                src="./image/jeoljuon_logo.svg"
+                                alt="절주온 로고"
+                                width="86.5"
+                                height="35"
+                            />
+                        </a>
+                    </h1>
 
-          <nav>
-            <ul>
-              <li class="navItemHeaderBottom">
-                <a href="#">사업</a>
-                <div class="dropdownHeaderBottom">
-                  <a href="#">모니터링</a>
-                  <ul class="subDropdownHeaderBottom">
-                    <li><a href="#">소개</a></li>
-                    <li><a href="#">모니터링 가이드</a></li>
-                  </ul>
-                  <a href="#">홍보캠페인</a>
-                  <a href="#">교육</a>
-                  <a href="#">서포터즈</a>
-                  <a href="#">지역사회 음주폐해예방사업</a>
-                </div>
-              </li>
-              <li class="navItemHeaderBottom">
-                <a href="#">통계</a>
-                <div class="dropdownHeaderBottom">
-                  <a href="#">통계</a>
-                </div>
-              </li>
-              <li class="navItemHeaderBottom">
-                <a href="#">자료</a>
-                <div class="dropdownHeaderBottom">
-                  <a href="#">영상</a>
-                  <a href="#">발간물</a>
-                  <a href="#">정책</a>
-                  <a href="#">건강</a>
-                  <a href="#">절주서포터즈 활동</a>
-                </div>
-              </li>
-              <li class="navItemHeaderBottom">
-                <a href="#">알림</a>
-                <div class="dropdownHeaderBottom">
-                  <a href="#">공지사항&소식</a>
-                  <a href="#">언론보도</a>
-                  <a href="#">FAQ</a>
-                  <a href="#">Q&A</a>
-                </div>
-              </li>
-            </ul>
-          </nav>
+                    <nav>
+                        <ul>
+                            <li class="navItemHeaderBottom">
+                                <a href="#">사업</a>
+                                <div class="dropdownHeaderBottom">
+                                    <a href="#">모니터링</a>
+                                    <ul class="subDropdownHeaderBottom">
+                                        <li><a href="#">소개</a></li>
+                                        <li><a href="#">모니터링 가이드</a></li>
+                                    </ul>
+                                    <a href="#">홍보캠페인</a>
+                                    <a href="#">교육</a>
+                                    <a href="#">서포터즈</a>
+                                    <a href="#">지역사회 음주폐해예방사업</a>
+                                </div>
+                            </li>
+                            <li class="navItemHeaderBottom">
+                                <a href="#">통계</a>
+                                <div class="dropdownHeaderBottom">
+                                    <a href="#">통계</a>
+                                </div>
+                            </li>
+                            <li class="navItemHeaderBottom">
+                                <a href="#">자료</a>
+                                <div class="dropdownHeaderBottom">
+                                    <a href="#">영상</a>
+                                    <a href="#">발간물</a>
+                                    <a href="#">정책</a>
+                                    <a href="#">건강</a>
+                                    <a href="#">절주서포터즈 활동</a>
+                                </div>
+                            </li>
+                            <li class="navItemHeaderBottom">
+                                <a href="#">알림</a>
+                                <div class="dropdownHeaderBottom">
+                                    <a href="#">공지사항&소식</a>
+                                    <a href="#">언론보도</a>
+                                    <a href="#">FAQ</a>
+                                    <a href="#">Q&A</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
 
-          <button class="hamburgerHeaderBottom" onclick="toggleFullscreenNav()">
-            ☰
-          </button>
+                    <button
+                        class="hamburgerHeaderBottom"
+                        onclick="toggleFullscreenNav()"
+                    >
+                        ☰
+                    </button>
+                </div>
+
+                <div class="fullScreenNavHeaderBottom" id="fullscreenNav">
+                    <button
+                        class="closeBtnHeaderBottom"
+                        onclick="toggleFullscreenNav()"
+                    >
+                        ✖
+                    </button>
+                    <!-- 맨 위 -->
+                    <ul class="hamburgerTopHeaderBottom">
+                        <li>사업</li>
+                        <li>통계</li>
+                        <li>자료</li>
+                        <li>알림</li>
+                    </ul>
+
+                    <!-- 중간 -->
+                    <div class="hamburgerMidHeaderBottom">
+                        <div>
+                            <li>모니터링</li>
+                            <li>홍보캠페인</li>
+                            <li>교육</li>
+                            <li>서포터즈</li>
+                            <li>지역사회 음주폐해예방사업</li>
+                        </div>
+                        <div>
+                            <li>통계</li>
+                        </div>
+                        <div>
+                            <li>영상</li>
+                            <li>발간물</li>
+                            <li>정책</li>
+                            <li>건강</li>
+                            <li>절주서포터즈 활동</li>
+                        </div>
+                        <div>
+                            <li>공지사항&소식</li>
+                            <li>언론보도</li>
+                            <li>FAQ</li>
+                            <li>Q&A</li>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- 헤더 영역 끝 -->
+            <!-- 메인 영역 시작 -->
+            <main id="main"></main>
+            <!-- 메인 영역 끝 -->
+            <!-- 하단 영역 시작 -->
+            <footer id="footer"></footer>
+            <!-- 하단 영역 끝 -->
         </div>
-
-        <div class="fullScreenNavHeaderBottom" id="fullscreenNav">
-          <button class="closeBtnHeaderBottom" onclick="toggleFullscreenNav()">
-            ✖
-          </button>
-          <!-- 맨 위 -->
-          <ul class="hamburgerTopHeaderBottom">
-            <li>사업</li>
-            <li>통계</li>
-            <li>자료</li>
-            <li>알림</li>
-          </ul>
-
-          <!-- 중간 -->
-          <div class="hamburgerMidHeaderBottom">
-            <div>
-              <li>모니터링</li>
-              <li>홍보캠페인</li>
-              <li>교육</li>
-              <li>서포터즈</li>
-              <li>지역사회 음주폐해예방사업</li>
-            </div>
-            <div>
-              <li>통계</li>
-            </div>
-            <div>
-              <li>영상</li>
-              <li>발간물</li>
-              <li>정책</li>
-              <li>건강</li>
-              <li>절주서포터즈 활동</li>
-            </div>
-            <div>
-              <li>공지사항&소식</li>
-              <li>언론보도</li>
-              <li>FAQ</li>
-              <li>Q&A</li>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- 헤더 영역 끝 -->
-      <!-- 메인 영역 시작 -->
-      <main id="main"></main>
-      <!-- 메인 영역 끝 -->
-      <!-- 하단 영역 시작 -->
-      <footer id="footer"></footer>
-      <!-- 하단 영역 끝 -->
-    </div>
-  </body>
+    </body>
 </html>
