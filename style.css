@@ -9,7 +9,7 @@ html {
   font-size: 10px;
   font-family: Noto, '맑은 고딕', Malgun Gothic, '돋움', Dotum, '굴림', Gulim,
     Arial, Verdana, AppleGothic, UnDotum, sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   overflow-y: scroll;
 }
 body {
@@ -17,6 +17,7 @@ body {
   padding: 0;
   font-size: 1.5rem;
 }
+
 /* 전체 색 지정 */
 #app {
   /* width: auto; */
@@ -31,8 +32,15 @@ body {
   height: 100px;
   border: 1px solid black;
 }
-/* 메인 스타일 시작 */
+
+/* 배경그림 */
 #main {
+  background: url(./image/bg.jpg) no-repeat center bottom;
+  width: 100%;
+  height: 100vh;
+}
+/* 메인 스타일 시작 */
+#wrap {
   position: relative;
   margin: 0 auto;
   width: 80%;
@@ -77,17 +85,6 @@ body {
   overflow: visible;
 }
 
-/* 배경 그림 */
-/* #main::before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  right: 50px;
-  background: url(./image/bg.jpg) no-repeat center bottom;
-} */
-
 .right {
   float: right;
 }
@@ -96,6 +93,7 @@ body {
   width: 510px;
   height: 420px;
   box-sizing: border-box;
+  unicode-bidi: isolate;
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid black;
@@ -132,6 +130,11 @@ body {
   width: 100%;
   text-align: left;
 }
+.tab a:hover::after,
+.newsarea .tab a.active::after {
+  width: 100%;
+  opacity: 1;
+}
 .newsarea::before {
   display: block;
   position: absolute;
@@ -142,6 +145,17 @@ body {
   background-color: #f6f7f8;
   transform: translateX(-50%);
   content: '';
+}
+.newsarea::after {
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  width: 0;
+  height: 7px;
+  background-color: rgba(58, 109, 213, 0.12);
+  transition: all 0.3s;
+  content: '';
+  opacity: 0;
 }
 h3 {
   width: 30%;
@@ -157,7 +171,7 @@ h3 > a {
   font-size: 1.8rem;
   font-weight: 700;
   text-decoration: none;
-  display: block;
+  display: inline-block;
   position: relative;
   padding: 6px 0;
   cursor: pointer;
