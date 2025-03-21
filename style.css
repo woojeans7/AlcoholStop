@@ -11,7 +11,11 @@ html {
     Arial, Verdana, AppleGothic, UnDotum, sans-serif;
   font-weight: 400;
   overflow-y: scroll;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
 }
+
 body {
   margin: 0;
   padding: 0;
