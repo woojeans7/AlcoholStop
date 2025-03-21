@@ -137,3 +137,154 @@ i {
     margin-right: 5px;
 }
 /* #### header 영역 끝 #### */
+
+/* 헤더 하단 */
+.headerBottom {
+    font-family: 'nanumsquareround';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px 20px 30px;
+    background: #d9e4f5;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6b6b;
+}
+
+.dropdownHeaderBottom {
+    position: fixed;
+    top: 62px;
+    left: 0;
+    width: 100%;
+    background: rgba(68, 68, 68, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    height: 58.5px;
+}
+
+/* 드롭다운 메뉴 스타일 */
+.dropdownHeaderBottom a {
+    color: #ccc;
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.dropdownHeaderBottom a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+/* 밑줄 효과 */
+.dropdownHeaderBottom a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dropdownHeaderBottom a:hover::after {
+    background-color: #91a3ff;
+}
+
+.navItemHeaderBottom {
+    position: relative;
+}
+
+.navItemHeaderBottom:hover .dropdownHeaderBottom {
+    opacity: 1;
+    visibility: visible;
+}
+/* 네비게이션 삼각형 표시 */
+.navItemHeaderBottom:hover::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(68, 68, 68, 0.9);
+}
+
+.hamburgerHeaderBottom {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px;
+}
+
+.fullScreenNavHeaderBottom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 50px;
+    display: none;
+}
+
+.fullScreenNavHeaderBottom > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.hamburgerMidHeaderBottom {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.hamburgerMidHeaderBottom div {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.closeBtnHeaderBottom {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
