@@ -4,9 +4,92 @@
   margin: 0;
   padding: 0;
   font-size: 1.4rem;
+  box-sizing: border-box;
 }
 
 /* 전체 색 지정 */
 #app {
   background-color: #dae9f5;
+}
+.rightbox {
+  padding: 35px;
+  width: 510px;
+  height: 420px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid black;
+  text-align: center;
+  align-items: center;
+
+  margin-bottom: 17px;
+  background-color: #fff;
+}
+.rightbox h2 {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-weight: 800;
+  font-size: 24px;
+
+  display: block;
+  text-align: center;
+}
+.wrapper {
+  width: 440px;
+  height: 350px;
+}
+.blueicon {
+  background: url(./image/blue_comma.png) no-repeat 0 center;
+  display: inline-block;
+  width: 48px;
+  height: 54px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+.newsarea {
+  height: 60px;
+
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+.newsarea::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 150%;
+  height: 60px;
+  background-color: #f6f7f8;
+  transform: translateX(-50%);
+  content: '';
+}
+h3 {
+  width: 30%;
+  font-size: 18px;
+  display: inline-block;
+  line-height: 1.1;
+  text-align: center;
+}
+h3 > a {
+  color: #3a6dd5;
+  width: auto;
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  padding: 6px 0;
+  cursor: pointer;
+}
+.newsarea .tab a::after {
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  width: 0;
+  height: 7px;
+  background-color: rgba(58, 109, 213, 0.12);
+  transition: all 0.3s;
+  content: '';
+  opacity: 0;
 }
