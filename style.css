@@ -177,7 +177,7 @@ h3 > a:active {
   opacity: 0;
 }
 /* main-right 하단 */
-.icon-link {
+.icon_link {
   width: 510px;
   background-color: #0683b7;
   border-radius: 20px;
@@ -185,43 +185,45 @@ h3 > a:active {
   box-sizing: border-box;
 }
 
-.icon-link img {
+.icon_link .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 46px;
   margin-bottom: 13px;
 }
 
-.icon-link a {
+.icon_link img {
+  height: 100%;
+}
+
+.icon_link a {
   color: white;
   text-decoration: none;
   font-size: 15px;
   font-weight: 300;
   cursor: pointer;
-}
-
-.icon-link a:hover {
-  text-decoration: underline;
-}
-
-.icon-link ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-}
-
-.icon-link li {
-  margin-right: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   text-align: center;
 }
 
-.icon-link li:last-child {
-  margin-right: 0px;
+.icon_link a:hover {
+  text-decoration: underline;
 }
 
-.icon-link span {
+.icon_link ul {
   display: flex;
-  justify-content: center;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.icon_link li {
+  flex: 1;
+  display: flex;
   align-items: center;
+  cursor: pointer;
 }
